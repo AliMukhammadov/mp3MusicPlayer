@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container" id="container">
+    <h1 id="title">Ending - Isak Danielson</h1>
+
+    <div class="image-container">
+      <img src="./album/Ending - Isak Danielson.jpg" alt="Album Cover" id="cover">
+    </div>
+
+    <div class="time">
+      <span id="start">00:00</span>
+      <span id="end">00:00</span>
+    </div>
+
+    <div class="range-slider">
+      <input class="slider" type="range" step="1" min="0" max="100" value="50" id="cowbell" name="cowbell">
+      
+      <div class="slider-thumb">
+        <div class="tootlip"></div>
+      </div>
+      <div class="progress-slider"></div>
+    </div>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <audio src="musics/Ending - Isak Danielson.mp3" id="audio"></audio>
+
+    
+
+    <div class="navigation">
+      <button id="prev" class="btn">
+        <i class="fas fa-backward"></i>
+      </button>
+      <button id="play" class="btn big">
+        <i class="fas fa-play"></i>
+      </button>
+      <button id="prev" class="btn">
+        <i class="fas fa-forward" id="next"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
